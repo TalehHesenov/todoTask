@@ -65,7 +65,7 @@ function searchTodo(){
             const li = document.createElement('li');
             li.id = item.id;
     
-            li.innerHTML = `<h4>${item.text}</h4>
+            li.innerHTML = `<h4 class="${item.isActive ? 'active' : ''}">${item.text}</h4>
         <button class="delete_btn">Delete</button>`;
     
             ul.appendChild(li);
