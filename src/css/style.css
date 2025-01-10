@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.container{
+    max-width: 1450px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#section1{
+    background-color: gold;
+    margin-top: 150px;
+
+    .container{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        form{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5px;
+
+          
+                input{
+                    padding: 5px;
+                    width: 200px;
+                }
+                button{
+                    padding: 5px 10px;
+                    background-color: blue;
+                    color: white;
+                    border-radius: 3px;
+                    border: none;
+                    cursor: pointer;
+
+                    transition: all .3s;
+
+                    &:hover{
+                        background-color: green;
+                    }
+                }
+            
+        }
+
+        #todo_ul{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 10px;
+           
+
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 5px;
+                border: 1px solid black;
+
+                button{
+                    background-color: red;
+                    padding: 5px 10px;
+                    color: white;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 3px;
+                    transition: all .3s;
+
+                    &:hover{
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .active{
+        
+            text-decoration: line-through;
+            color: gray;
+            opacity: 0.6;
+    }
+}
